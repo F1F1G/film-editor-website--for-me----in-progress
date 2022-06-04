@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaż filmów - sklep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Create your movie</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="img/1111.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Poznaj sekrety </h2> 
+      <h3>tworzenia filmów</h3>
+
+      <p>Spojrzenie na swiat przez obiektyw twojego aparatu pozwala Ci zrozumieć go
+        z całkiem innej perspektywy. Czasami jest on oddalony od twojej obecnej percepcji postrzegania swiata.
+        Ale to dobrze, zobacz jak naprawdę wygląda twoje otoczenie. Stwórz ze mną materiał
+        na dobry film.</p>
+      <a href="#">Więcej</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/filip.ojczyk/"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="https://www.instagram.com/filippojczyk/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+    <div class="copyright">CopyRight By Filip Ojczyk</div>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Nowosci</a></li>
+      <li><a href="#">Moje filmy</a></li>
+      <li><a href="#">Cennik</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Kontakt</a></li>
+      <li><a href="#">Opinie</a></li>
+    </ul>
+  </div>
+
+
+
+  <script>
+      const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
+  </script>
+</body>
+</html>
